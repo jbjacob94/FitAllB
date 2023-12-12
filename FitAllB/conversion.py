@@ -254,8 +254,8 @@ def formStiffnessMV(crystal_system,c11=None,c12=None,c13=None,c14=None,c15=None,
         unique = [c11,c12,c13,c33,c44,c66]
         full = [c11,c12,c13,0,0,0,c11,c13,0,0,0,c33,0,0,0,c44,0,0,c44,0,c66]
     elif crystal_system == 'tetragonal_low':
-        unique_list = 'c11,c12,c13,c16c33,c44,c66'
-        unique = [c11,c12,c13,c16c33,c44,c66]
+        unique_list = 'c11,c12,c13,c16,c33,c44,c66'
+        unique = [c11,c12,c13,c16,c33,c44,c66]
         full = [c11,c12,c13,0,0,c16,c11,c13,0,0,-c16,c33,0,0,0,c44,0,0,c44,0,c66]
     elif crystal_system == 'orthorhombic':
         unique_list = 'c11,c12,c13,c22,c23,c33,c44,c55,c66'
